@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+ 
+<header>
+    <div class="divheadder">
+        <a class="marcalink" href="../index.html">
+        <h1 class="h1marca"><span class="marca">N</span><span class="marca">S</span><span class="marca">M</span><span class="marca">!</span>
+        </h1>
+        </a>
+    </div>
+
+        <!-- NAV ES PARA MENU DE NAVEGACION 
+             ul ES PARA LISTA NO ORDENADA
+             il ES PARA CADA ITEM DE LA LISTA 
+            CON CLICK DERECHO FORMAT DOCUMENT ORDENO TODO
+            SI QUIERO LISTA DENTRO DE LISTA, PONGO DOS PUNTOS SEGUIDOS DEL TITULO DE LISTA Y LUEGO CREO ETIQUETA DE LISTA: lo ul 
+        -->
+
+</header>
+
+<main class="cuerpocontacto">
+    <form class="formulariocontacto" 
+        style="text-align:right;" action="#" method="get">
+        <label>
+        <input type="text" placeholder="Nombre" name="Nombre">
+        <input type="text" placeholder="Apellido" name="Apellido">
+        </label>
+        <br>
+        <br>
+
+        <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad">
+        <br>
+        <br>
+        <label for="correo electronico">Correo Electronico</label>
+            <input type="email" name="correo electronico">
+        <label>
+            <input type="checkbox" name="noticias">
+            <span 
+            class="suscribirme">Suscribirme al Newsletter</span>
+        </label>
+        
+        <H2>Comentarios</H2>
+            <textarea name="comentario" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit">
+            <br>
+            <br>
+            <br>
+            </form>
+
+            <NAV class="botonera">
+                <div id="enlaces">
+                <ul class="listadecontacto">
+                    <a href="../HTML/quienessomos.html">
+                    <button class="botoneracontacto">QUIENES SOMOS</button></a>
+                    <a href="../HTML/sucursales.html">
+                    <button class="botoneracontacto">SUCURSALES</button></a>    
+                    <a href="../index.html">
+                    <button class="botoneracontacto">INICIO</button></a>
+                    <a href="../HTML/franquicias.html">
+                    <BUTTon class="botoneracontacto">FRANQUICIAS</BUTTon></a>
+                </ul>
+                </div>
+            </NAV>
+
+</main>
+
+<footer>
+    <div class="container">
+        <svg viewBox="0 0 960 300">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">50% OFF !!!</text>
+          </symbol>
+      
+          <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+    
+      </div>
+
+
+
+    <p class="parrafopie">
+        NSM es una marca registrada de Pablo Bianchet Martinez - 2022
+        Powered by Pablo Bianchet Martinez - Todos los derechos se encuentran protegidos por el RPI
+
+        <br>
+
+    </p>
+</footer>
+</body>
+
+</html>
