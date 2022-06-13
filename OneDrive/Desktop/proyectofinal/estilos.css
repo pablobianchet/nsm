@@ -1,0 +1,152 @@
+*{padding: 0; margin: 0;}
+    
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+/* aca comineza el estilo del headder */
+
+.cabeza{background-image: url(https://fondosmil.com/fondo/16212.jpg);}
+.h1marca{
+    font-size: 200px; 
+    text-align: center; 
+    font-style: italic; 
+    color: black; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    text-shadow: 0 0 0 whitesmoke;
+    animation: smoky-mirror 4s 1s both  reverse;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes smoky{ 
+    60% 
+    {text-shadow: 0 0 40px whitesmoke;}
+    to {
+    transform:
+    translate3d(15rem,-8rem,0)
+    rotate(-40deg)
+    skewX(70deg)
+    scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    text-align: center;
+    opacity: 0;
+}
+}
+
+@keyframes smoky-mirror{ 
+    60% 
+    {text-shadow: 0 0 40px whitesmoke;}
+    to {
+    transform:
+    translate3d(18rem,-8rem,0)
+    rotate(-100deg) 
+    skewX(-70deg)
+    scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+}    
+}
+
+@for $item from 1 through 21 {
+    span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+}
+}
+
+
+.marcalink{text-decoration: none;}
+
+/* aca comineza el estilo del main */
+
+.texto{size: 60%; color: white; font-style: oblique; font-family: Arial, Helvetica, sans-serif; font-size: xx-large; text-decoration: double;}
+.container-fluid{font-size: medium;}
+.container-md{max-width: 100%;}
+
+
+/* aca comienza el estilo del footer */
+
+.parrafopie{
+    text-align: center; 
+    color: rgb(242, 238, 238); 
+    text-decoration: double; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #b3b3bc;
+  font-family: Arial;
+}
+
+.container{align: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-top: 0px;
+  float: none;
+}
+
+svg{
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+    padding-left: 26%;
+    font-size: 8rem;
+}
+
+.text-copy{
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+.pie{background-repeat: no-repeat; position: relative; background-image: url(https://fondosmil.com/fondo/16212.jpg); margin-top: 2%;}
+
+/* FORMULARIO CONTACTO DE LA PAGINA CONTACTO */
+
